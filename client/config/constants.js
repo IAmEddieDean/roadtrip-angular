@@ -1,4 +1,4 @@
 'use strict';
 
-angular.module('poseidon')
-.constant('firebaseUrl', 'https://ENTER-YOUR-FB-URL.firebaseio.com/');
+angular.module('roadtrip')
+.constant('firebaseUrl', 'https://flickering-torch-6914.firebaseio.com/');

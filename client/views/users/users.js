@@ -1,10 +1,15 @@
 'use strict';
 
-angular.module('poseidon')
+angular.module('roadtrip')
 .controller('UsersCtrl', function($scope, $state, $window, User){
   $scope.name = $state.current.name;
 
+  $scope.oauth = function(provider){
+    User.oauth(provider);
+  };
+
   $scope.submit = function(user){
+    console.log(user);
     if($scope.name === 'register'){
       User.register(user)
       .then(function(){

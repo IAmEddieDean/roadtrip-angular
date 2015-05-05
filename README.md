@@ -1,8 +1,8 @@
-# Poseidon
+# roadtrip
 
 #### Setup
 ```
-git clone https://github.com/coding-house-apr2015/poseidon my-app
+git clone https://github.com/coding-house-apr2015/roadtrip my-app
 cd my-app
 ./setup.sh
 gulp
