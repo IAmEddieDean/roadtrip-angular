@@ -1,0 +1,15 @@
+h3.text-center Your Profile!!
+.row
+  .col-xs-4
+    form(name='userForm', novalidate)
+      .form-group
+        label(for='email') Email
+        input.form-control#email(type='email', name='email', ng-model='user.email')
+      .form-group
+        label(for='avatar') Avatar
+        input.form-control#email(type='url', name='avatar', ng-model='user.avatar')
+      .form-group
+        button.btn.btn-default(type='submit', ng-click='update(user)') Submit
+  .col-xs-3
+      img.img-responsive.img-thumbnail(ng-src='{{user.avatar}}')
+    //- .col-xs-offset-2

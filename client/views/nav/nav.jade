@@ -9,6 +9,7 @@ nav.navbar.navbar-default(ng-controller='NavCtrl')
       a.navbar-brand(href='/') {{displayName + "'s "}} Roadtrip!
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right(ng-show='activeUser')
+        li: a(ui-sref='profile'): i.fa.fa.fa-qq &nbsp; Profile
         li: a(ui-sref='home'): i.fa.fa.fa-home &nbsp; Home
         li: a(ui-sref='about'): i.fa.fa.fa-info &nbsp; About
         li: a(ui-sref='faq'): i.fa.fa.fa-question &nbsp; FAQ
