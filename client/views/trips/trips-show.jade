@@ -1,1 +1,9 @@
-h3 Show trips
+h3.text-center Your trip to {{trip.name}}
+
+.row
+  .col-xs-8.col-xs-offset-2
+    table.table.table-striped
+      thead
+        tr
+          th.text-center You are Leaving on {{trip.depart | date: medium}}
+          th.text-center You created this trip on {{trip.createdAt | date: medium}}

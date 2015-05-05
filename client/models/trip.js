@@ -6,10 +6,16 @@ angular.module('roadtrip')
   function Trip(obj){
     this.name = obj.name;
     this.depart = obj.depart;
-    this.dest = obj.dest;
+    // this.dest = obj.dest;
   }
   Trip.prototype.save = function(){
     return $http.post(nodeUrl + '/trips', this);
+  };
+  Trip.find = function(){
+    return $http.get(nodeUrl + '/trips');
+  };
+  Trip.show = function(tripId){
+    return $http.get(nodeUrl + '/trips/' + tripId);
   };
   // User.show = function(){
   //   return $http.get(nodeUrl + '/users');
