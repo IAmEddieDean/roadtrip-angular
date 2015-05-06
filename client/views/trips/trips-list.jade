@@ -13,3 +13,4 @@ h3.text-center A List of your Trips
           th {{trip.depart | date: medium}}
           th {{trip.createdAt | date: medium}}
           th: a.btn.btn-xs.btn-info(ui-sref='trips.show({tripId: trip._id})') Show
+          th: btn.btn-xs.btn-danger(ng-click='destroy(trip)') X
