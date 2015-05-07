@@ -6,7 +6,7 @@ nav.navbar.navbar-default(ng-controller='NavCtrl')
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand(href='/') {{displayName + "'s "}} Roadtrip!
+      a.navbar-brand(href='/') {{displayName ? displayName + "'s " : ''}} Roadtrip!
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right(ng-show='activeUser')
         li: a(ui-sref='profile'): i.fa.fa.fa-qq &nbsp; Profile

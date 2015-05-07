@@ -5,6 +5,7 @@ angular.module('roadtrip')
 
   $scope.afAuth.$onAuth(function(data){
     if(data){
+      console.log(data);
       $rootScope.activeUser = data;
       $rootScope.displayName = getDisplayName(data);
       $rootScope.fbUser = $rootScope.fbRoot.child('users/' + data.uid);
@@ -22,7 +23,7 @@ angular.module('roadtrip')
       $http.defaults.headers.common.Authorization = null;
 
     }
-
+    
     $state.go('home');
   });
 
