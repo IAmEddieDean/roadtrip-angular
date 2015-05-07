@@ -8,16 +8,16 @@ h3.text-center Your trip to {{trip.name}}
           th.text-center You are Leaving on {{trip.depart | date: medium}}
           th.text-center You created this trip on {{trip.createdAt | date: medium}}
 .row
-  .col-xs-4
+  .col-xs-12
     form(name='stopForm', novalidate)
       .form-group
         label(for='name') Name
         input.form-control#email(type='text', name='name', ng-model='stop.name')
       .form-group
         button.btn.btn-info.btn-xs(type='submit', ng-click='create(stop)') Add Stop
-  .col-xs-4
+
     #map
-  .col-xs-4
+
     table.table.table-striped
       thead
         tr
